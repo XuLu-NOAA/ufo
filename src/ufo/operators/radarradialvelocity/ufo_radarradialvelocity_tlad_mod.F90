@@ -103,9 +103,9 @@ subroutine radarradialvelocity_tlad_settraj_(self, geovals, obss)
   allocate(self%vterminal(self%nlocs))
 
   call obsspace_get_db(obss, "MetaData", "height", obsvcoord)
-  call obsspace_get_db(obss, "MetaData", "cosAzimuthCosTilt", self%cosazm_costilt)
-  call obsspace_get_db(obss, "MetaData", "sinAzimuthCosTilt", self%sinazm_costilt)
-  call obsspace_get_db(obss, "MetaData", "sinTilt", self%sintilt)
+  call obsspace_get_db(obss, "MetaData", "cosazm_costilt", self%cosazm_costilt)
+  call obsspace_get_db(obss, "MetaData", "sinazm_costilt", self%sinazm_costilt)
+  call obsspace_get_db(obss, "MetaData", "sintilt", self%sintilt)
 ! call obsspace_get_db(obss, "MetaData", "vterminal", self%vterminal)
 
   ! Allocate arrays for interpolation weights
