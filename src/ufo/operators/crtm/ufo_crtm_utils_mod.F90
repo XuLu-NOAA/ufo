@@ -1420,6 +1420,9 @@ real(kind_real), allocatable :: ObsTb(:,:)
       sfc(k1)%Ice_Coverage = min(sfc(k1)%Ice_Coverage + sfc(k1)%Land_Coverage, ONE)
       sfc(k1)%Land_Coverage = ZERO
     end if
+    if (( sfc(k1)%Land_Coverage > ZERO ) .and. (( sfc(k1)%Soil_Temperature < 100.0 .OR. sfc(k1)%Soil_Temperature > 350.0 ))) then
+      sfc(k1)%Soil_Temperature=sfc(k1)%Land_Temperature
+    endif
   end do
   if (obsspace_has(obss, "MetaData", "zeroCloudInCRTM")) then
     ! zeroCloudInCRTM is 1 over surface where clear-sky assimilation is conducted.
