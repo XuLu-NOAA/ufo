@@ -95,6 +95,9 @@ set ( filters_files
       QCflags.h
       PerformAction.cc
       PerformAction.h
+      UseNearestNeighbors.cc
+      UseNearestNeighbors.h
+      UseNearestNeighborsParameters.h
       ProfileAverageObsToModLevels.cc
       ProfileAverageObsToModLevels.h
       AverageObsToGeoValLevels.cc
@@ -107,6 +110,8 @@ set ( filters_files
       ProfileMaxDifferenceCheck.h
       ProfileUnFlagObsCheck.cc
       ProfileUnFlagObsCheck.h
+      RecordThresholdRejection.cc
+      RecordThresholdRejection.h
       SatName.h
       SatName.cc
       SatwindInversionCorrection.cc
@@ -117,6 +122,9 @@ set ( filters_files
       SharedListStore.h
       SpikeAndStepCheck.cc
       SpikeAndStepCheck.h
+      StepCheck.cc
+      StepCheck.h
+      StepCheckParameters.h
       StuckCheck.cc
       StuckCheck.h
       StuckCheckParameters.h
@@ -125,6 +133,7 @@ set ( filters_files
       PercentileParameters.h
       SuperOb.h
       SuperOb.cc
+      SuperObParameters.h
       SuperRefractionCheckImpactParameter.h
       SuperRefractionCheckImpactParameter.cc
       SuperRefractionCheckNBAM.h
@@ -270,6 +279,8 @@ set ( filters_files
       obsfunctions/CloudFirstGuessMinimumResidual.h
       obsfunctions/CircularDifference.cc
       obsfunctions/CircularDifference.h
+      obsfunctions/LocationToObsSpace.cc
+      obsfunctions/LocationToObsSpace.h
       obsfunctions/MetOfficeAllSkyErrorModel.cc
       obsfunctions/MetOfficeAllSkyErrorModel.h
       obsfunctions/ModelHeightAdjustedWindVectorComponent.cc
